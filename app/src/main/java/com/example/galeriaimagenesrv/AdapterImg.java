@@ -78,6 +78,7 @@ public class AdapterImg extends RecyclerView.Adapter<AdapterImg.GaleriaViewHolde
         public void onClick(View v) {
             // Se obtiene la posición del elemento dentro del adaptador
             int position = getAdapterPosition();
+            Log.d("AdapterPosition", "Position: " + position);
 
             // Se verifica si la posición obtenida es válida
             if (position != RecyclerView.NO_POSITION) {
