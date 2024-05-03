@@ -67,9 +67,9 @@ public class AdapterImg extends RecyclerView.Adapter<AdapterImg.GaleriaViewHolde
             imgRV = mBiding.imgRV;
             descripcionImg = mBiding.descripcionImg;
 
-            // OnClickListener en el itemView (la vista raíz del layout inflado)
+            // OnClickListener en el el layout inflado(vista)
             // Cuando se hace clic en cualquier parte del elemento del RecyclerView, se activará este OnClickListener
-            itemView.setOnClickListener(this);
+            mBiding.getRoot().setOnClickListener(this);
 
         }
 

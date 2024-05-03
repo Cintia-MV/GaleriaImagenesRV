@@ -17,7 +17,7 @@ import com.example.galeriaimagenesrv.databinding.FragmentFirstBinding;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FirstFragment extends Fragment implements AdapterImg.SendItem{
+public class FirstFragment extends Fragment implements AdapterImg.SendItem {
 
     private FragmentFirstBinding binding;
     private List<Item> galeria = new ArrayList<>();
@@ -30,7 +30,7 @@ public class FirstFragment extends Fragment implements AdapterImg.SendItem{
 
         binding = FragmentFirstBinding.inflate(inflater, container, false);
         RecyclerView recyclerView = binding.recyclerView;
-        AdapterImg adaptador = new AdapterImg(returnItemList(), getContext(),this);
+        AdapterImg adaptador = new AdapterImg(returnItemList(), getContext(), this);
         recyclerView.setAdapter(adaptador);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
