@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -67,9 +68,8 @@ public class AdapterImg extends RecyclerView.Adapter<AdapterImg.GaleriaViewHolde
             imgRV = mBiding.imgRV;
             descripcionImg = mBiding.descripcionImg;
 
-            // OnClickListener en el el layout inflado(vista)
-            // Cuando se hace clic en cualquier parte del elemento del RecyclerView, se activará este OnClickListener
-            mBiding.getRoot().setOnClickListener(this);
+            // Cuando se hace clic en la imagen se activa OnClickListener
+            imgRV.setOnClickListener(this);
 
         }
 
